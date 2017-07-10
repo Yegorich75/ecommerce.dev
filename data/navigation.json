@@ -1,0 +1,19 @@
+{
+  "headerNav": {
+    "howOrder" : {
+        "title": "Как заказать",
+        "link": "javascript:void(0)",
+        "icon": "howOrder"
+    },
+    "payment" : {
+        "title": "Оплата",
+        "link": "javascript:void(0)",
+        "icon": "payment"
+    },
+    "delivery" : {
+        "title": "Доставка",
+        "link": "javascript:void(0)",
+        "icon": "delivery"
+    }
+  }
+}
