@@ -1,5 +1,5 @@
 {
-  "headerNav": {
+  "headerNavInfo": {
     "howOrder" : {
         "title": "Как заказать",
         "link": "javascript:void(0)",
@@ -14,6 +14,24 @@
         "title": "Доставка",
         "link": "javascript:void(0)",
         "icon": "delivery"
+    }
+  },
+
+    "headerNavConnect": {
+    "phone" : {
+        "title": "8 800 123-45-67",
+        "link": "javascript:void(0)",
+        "icon": "phone"
+    },
+    "callback" : {
+        "title": "Обратный звонок",
+        "link": "javascript:void(0)",
+        "icon": "callback"
+    },
+    "address" : {
+        "title": "Адреса салонов",
+        "link": "javascript:void(0)",
+        "icon": "address"
     }
   }
 }

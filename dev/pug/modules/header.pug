@@ -10,10 +10,13 @@ header
             li.header-nav__item 
                 a(href="#") Адреси салонів           
         ul.header-nav__list
-            each object in nav.headerNav
+            each object in nav.headerNavInfo
                 li.header-nav__item 
                     +icon(object['icon'])
-                    a(href=object['link']) = object['title']
+                    a(href= object['link'])= object['title']
         ul.header-nav__list
-            
+            each object in nav.headerNavConnect
+                li.header-nav__item 
+                    +icon(object['icon'])
+                    a(href= object['link'])= object['title']
         
