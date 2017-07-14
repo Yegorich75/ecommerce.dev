@@ -1,21 +1,24 @@
 header
     .container
         .logo.header-logo
-            +icon('logo-sytahata')
-        ul.header-nav__list
-            li.header-nav__item 
-                a(href="tel:88001234567").header__phone 8 800 1234567
-            li.header-nav__item 
-                a(href="#") Зворотній дзвінок
-            li.header-nav__item 
-                a(href="#") Адреси салонів           
+            +icon('logo-sytahata')           
         ul.header-nav__list
             each object in nav.headerNavInfo
                 li.header-nav__item 
                     +icon(object['icon'])
                     a(href= object['link'])= object['title']
         ul.header-nav__list
+            each object in nav.headerNavUser
+                li.header-nav__item 
+                    +icon(object['icon'])
+                    a(href= object['link'])= object['title']
+        ul.header-nav__list
             each object in nav.headerNavConnect
+                li.header-nav__item 
+                    +icon(object['icon'])
+                    a(href= object['link'])= object['title']
+        ul.header-nav__list.header-nav__list--user
+            each object in nav.headerNavProduct
                 li.header-nav__item 
                     +icon(object['icon'])
                     a(href= object['link'])= object['title']

@@ -1,9 +1,9 @@
 {
-  "headerNavInfo": {
-    "howOrder" : {
-        "title": "Как заказать",
-        "link": "javascript:void(0)",
-        "icon": "howOrder"
+	"headerNavInfo": {
+		"howOrder" : {
+			"title": "Как заказать",
+			"link": "javascript:void(0)",
+			"icon": "howorder"
     },
     "payment" : {
         "title": "Оплата",
@@ -17,21 +17,57 @@
     }
   },
 
+"headerNavUser": {
+	"location" : {
+		"title": "Киев",
+		"link": "javascript:void(0)",
+		"icon": "location"
+    },
+    "login" : {
+        "title": "Войти",
+        "link": "javascript:void(0)",
+        "icon": "login"
+    },
+    "register" : {
+        "title": "Зарегистрироваться",
+        "link": "javascript:void(0)",
+        "icon": "register"
+    }
+  },
+
     "headerNavConnect": {
-    "phone" : {
-        "title": "8 800 123-45-67",
-        "link": "javascript:void(0)",
-        "icon": "phone"
-    },
-    "callback" : {
-        "title": "Обратный звонок",
-        "link": "javascript:void(0)",
-        "icon": "callback"
-    },
-    "address" : {
-        "title": "Адреса салонов",
-        "link": "javascript:void(0)",
-        "icon": "address"
+		"phone" : {
+			"title": "8 800 123-45-67",
+			"link": "javascript:void(0)",
+			"icon": "phone"
+		},
+		"callback" : {
+			"title": "Обратный звонок",
+			"link": "javascript:void(0)",
+			"icon": "callback"
+		},
+		"address" : {
+			"title": "Адреса салонов",
+			"link": "javascript:void(0)",
+			"icon": "address"
+    }
+  },
+
+    "headerNavProduct": {
+		"aqual" : {
+			"title": "Сравнение",
+			"link": "javascript:void(0)",
+			"icon": "aqual"
+		},
+		"favorite" : {
+			"title": "Избранное",
+			"link": "javascript:void(0)",
+			"icon": "favorite"
+		},
+		"basket" : {
+			"title": "Корзина",
+			"link": "javascript:void(0)",
+			"icon": "basket"
     }
   }
 }
