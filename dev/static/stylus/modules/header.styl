@@ -14,25 +14,27 @@ header
 .icon-logo-sytahata
     size(200px, auto)
     font-size: rem(14)
-    border-bottom: 1px solid grayColor
 
-.header-nav__item
-    margin-bottom: 10px
-    &:last-child
-        margin-bottom: 0
-    .icon
-        size(17px)
-        fill: #fff
-        margin-right: 10px
-    a 
+.header-nav
+    &__item
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+        .icon
+            size(17px)
+            fill: #fff
+            margin-right: 10px
+    &__link
+        border-bottom: 1px solid grayColor
         color: white
         font-size: rem(14)
-        border-bottom: 1px solid
         display: inline-block
         padding-bottom: 4px
-        &.header__phone
-            font-size: rem(20)
+        &--dotted
+            border-bottom-style: dotted
 
+.header__phone
+    font-size: rem(20p)
 
 
     

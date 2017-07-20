@@ -17,7 +17,7 @@
     }
   },
 
-"headerNavUser": {
+"headerNavConnect": {
 	"location" : {
 		"title": "Київ",
 		"link": "javascript:void(0)",
@@ -35,23 +35,6 @@
     }
   },
 
-"headerNavConnect": {
-	"phone" : {
-		"title": "8 800 123-45-67",
-		"link": "javascript:void(0)",
-		"icon": "phone"
-	},
-	"callback" : {
-		"title": "Зворотній дзвінок",
-		"link": "javascript:void(0)",
-		"icon": "callback"
-	},
-	"address" : {
-		"title": "Адреси салонів",
-		"link": "javascript:void(0)",
-		"icon": "address"
-    }
-  },
 
 "headerNavProduct": {
 	"aqual" : {
