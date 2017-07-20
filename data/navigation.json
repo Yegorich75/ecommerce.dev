@@ -1,19 +1,19 @@
 {
-	"headerNavInfo": {
-		"howOrder" : {
-			"title": "Як замовити",
+"headerNavInfo": {
+	"howOrder" : {
+		"title": "Як замовити",
+		"link": "javascript:void(0)",
+		"icon": "howorder"
+	},
+	"payment" : {
+			"title": "Оплата",
 			"link": "javascript:void(0)",
-			"icon": "howorder"
-    },
-    "payment" : {
-        "title": "Оплата",
-        "link": "javascript:void(0)",
-        "icon": "payment"
-    },
-    "delivery" : {
-        "title": "Доставка",
-        "link": "javascript:void(0)",
-        "icon": "delivery"
+			"icon": "payment"
+	},
+	"delivery" : {
+			"title": "Доставка",
+			"link": "javascript:void(0)",
+			"icon": "delivery"
     }
   },
 
@@ -35,39 +35,39 @@
     }
   },
 
-    "headerNavConnect": {
-		"phone" : {
-			"title": "8 800 123-45-67",
-			"link": "javascript:void(0)",
-			"icon": "phone"
-		},
-		"callback" : {
-			"title": "Зворотній дзвінок",
-			"link": "javascript:void(0)",
-			"icon": "callback"
-		},
-		"address" : {
-			"title": "Адреси салонів",
-			"link": "javascript:void(0)",
-			"icon": "address"
+"headerNavConnect": {
+	"phone" : {
+		"title": "8 800 123-45-67",
+		"link": "javascript:void(0)",
+		"icon": "phone"
+	},
+	"callback" : {
+		"title": "Зворотній дзвінок",
+		"link": "javascript:void(0)",
+		"icon": "callback"
+	},
+	"address" : {
+		"title": "Адреси салонів",
+		"link": "javascript:void(0)",
+		"icon": "address"
     }
   },
 
-    "headerNavProduct": {
-		"aqual" : {
-			"title": "Порівняння",
-			"link": "javascript:void(0)",
-			"icon": "aqual"
-		},
-		"favorite" : {
-			"title": "Вибране",
-			"link": "javascript:void(0)",
-			"icon": "favorite"
-		},
-		"basket" : {
-			"title": "Кошик",
-			"link": "javascript:void(0)",
-			"icon": "basket"
+"headerNavProduct": {
+	"aqual" : {
+		"title": "Порівняння",
+		"link": "javascript:void(0)",
+		"icon": "aqual"
+	},
+	"favorite" : {
+		"title": "Вибране",
+		"link": "javascript:void(0)",
+		"icon": "favorite"
+	},
+	"basket" : {
+		"title": "Кошик",
+		"link": "javascript:void(0)",
+		"icon": "basket"
     }
   }
 }
