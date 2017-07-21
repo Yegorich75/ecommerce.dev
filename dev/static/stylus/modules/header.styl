@@ -16,22 +16,29 @@ header
     font-size: rem(14)
     border-bottom: 1px solid grayColor
 
-.header-nav__item
-    margin-bottom: 10px
-    &:last-child
-        margin-bottom: 0
-    .icon
-        size(17px)
-        fill: #fff
-        margin-right: 10px
-    a 
+.header-nav
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &__item
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+        .icon
+            size(17px)
+            fill: #fff
+            margin-right: 10px
+    &__link
         color: white
         font-size: rem(14)
-        border-bottom: 1px solid
-        display: inline-block
+        border-bottom: 1px solid grayColor
         padding-bottom: 4px
+        align-items: flex-end
+        flex:  1
         &.header__phone
             font-size: rem(20)
+
+
 
 
 

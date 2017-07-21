@@ -2,27 +2,28 @@ header
     .header-top
         .container
             .logo.header-logo
-                +icon('logo-sytahata')           
-            ul.header-nav__list
-                each object in nav.headerNavInfo
-                    li.header-nav__item 
-                        +icon(object['icon'])
-                        a(href= object['link'])= object['title']
-            ul.header-nav__list
-                each object in nav.headerNavUser
-                    li.header-nav__item 
-                        +icon(object['icon'])
-                        a(href= object['link'])= object['title']
-            ul.header-nav__list
-                each object in nav.headerNavConnect
-                    li.header-nav__item 
-                        +icon(object['icon'])
-                        a(href= object['link'])= object['title']
-            ul.header-nav__list.header-nav__list--user
-                each object in nav.headerNavProduct
-                    li.header-nav__item 
-                        +icon(object['icon'])
-                        a(href= object['link'])= object['title']
+                +icon('logo-sytahata')
+            .header-nav           
+                ul.header-nav__list
+                    each object in nav.headerNavInfo
+                        li.header-nav__item 
+                            +icon(object['icon'])
+                            a(href= object['link']).header-nav__link= object['title']
+                ul.header-nav__list
+                    each object in nav.headerNavUser
+                        li.header-nav__item 
+                            +icon(object['icon'])
+                            a(href= object['link']).header-nav__link= object['title']
+                ul.header-nav__list
+                    each object in nav.headerNavConnect
+                        li.header-nav__item 
+                            +icon(object['icon'])
+                            a(href= object['link']).header-nav__link= object['title']
+                ul.header-nav__list.header-nav__list--user
+                    each object in nav.headerNavProduct
+                        li.header-nav__item 
+                            +icon(object['icon'])
+                            a(href= object['link']).header-nav__link= object['title']
     .header-bottom
         .container                
             include menu
