@@ -3,14 +3,16 @@ header
         .container
             .logo.header-logo
                 +icon('logo-sytahata')
-            .header-nav           
+            .header-nav 
+                ul.header-nav__list
+                    li.header-nav__item
+                        a(href="tel:88001234567").header-nav__link.header__phone 8 800 123-45-67  
+                    li.header-nav__item
+                        a(href="javascript:void").header-nav__link.header-nav__link--dotted Зворотній дзвінок
+                    li.header-nav__item
+                        a(href="javascript:void").header-nav__link Адреси салонів       
                 ul.header-nav__list
                     each object in nav.headerNavInfo
-                        li.header-nav__item 
-                            +icon(object['icon'])
-                            a(href= object['link']).header-nav__link= object['title']
-                ul.header-nav__list
-                    each object in nav.headerNavUser
                         li.header-nav__item 
                             +icon(object['icon'])
                             a(href= object['link']).header-nav__link= object['title']
@@ -18,12 +20,17 @@ header
                     each object in nav.headerNavConnect
                         li.header-nav__item 
                             +icon(object['icon'])
-                            a(href= object['link']).header-nav__link= object['title']
-                ul.header-nav__list.header-nav__list--user
-                    each object in nav.headerNavProduct
-                        li.header-nav__item 
-                            +icon(object['icon'])
-                            a(href= object['link']).header-nav__link= object['title']
+                            if (object['title'] === 'Увійти' || object['title'] === 'Київ')
+                                a(href= object['link']).header-nav__link.header-nav__link--dotted= object['title']
+                            else
+                                a(href= object['link']).header-nav__link= object['title']
+                ul.header-nav__user
+                    each object in nav.headerNavUser
+                        li.header-nav__user--item 
+                            .header-nav__user--icon
+                                +icon(object['icon'])
+                                span.header-nav__user--count= object['number']
+                            a(href= object['link']).header-nav__link.header-nav__link--user= object['title']
     .header-bottom
         .container                
             include menu

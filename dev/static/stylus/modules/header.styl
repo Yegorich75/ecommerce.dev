@@ -4,22 +4,25 @@ header
 .header-top    
     .container
         display: flex
-        align-items: center
+        align-items: flex-end
         justify-content: space-between
         border-bottom: 1px solid grayColor
 
 .header-bottom
     padding: 15px 0
 
+.header-logo
+    margin-right: 60px
+
 .icon-logo-sytahata
     size(200px, auto)
     font-size: rem(14)
-    border-bottom: 1px solid grayColor
 
 .header-nav
-    width: 100%
     display: flex
+    align-items: flex-end
     justify-content: space-between
+    flex-shrink: 1
     &__item
         margin-bottom: 10px
         &:last-child
@@ -29,15 +32,30 @@ header
             fill: #fff
             margin-right: 10px
     &__link
+        border-bottom: 1px solid grayColor
         color: white
         font-size: rem(14)
-        border-bottom: 1px solid grayColor
+        display: inline-block
         padding-bottom: 4px
-        align-items: flex-end
-        flex:  1
-        &.header__phone
-            font-size: rem(20)
+        &--dotted
+            border-bottom-style: dotted
+        &--user
+            display: block
+    &__user
+        display: flex
+        &--item
+            text-align: center
+            margin-left: 25px
+            &:first-child
+                margin-left: 45px
+        .icon
+            fill: #fff
+            size(30px)
+            margin-bottom: 15px
+            margin: center
 
+.header__phone
+    font-size: rem(20p)
 
 
 
