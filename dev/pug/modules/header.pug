@@ -19,14 +19,16 @@ header
                 each object in nav.headerNavConnect
                     li.header-nav__item 
                         +icon(object['icon'])
-                        if(object['title'] === 'Увійти' || object['title'] === 'Київ')
+                        if (object['title'] === 'Увійти' || object['title'] === 'Київ')
                             a(href= object['link']).header-nav__link.header-nav__link--dotted= object['title']
                         else
                             a(href= object['link']).header-nav__link= object['title']
             ul.header-nav__list.header-nav__list--user
                 each object in nav.headerNavProduct
-                    li.header-nav__item 
-                        +icon(object['icon'])
+                    li.header-nav__user--item 
+                        .header-nav__user--icon
+                            +icon(object['icon'])
+                            span.header-nav__user--count= object['number']
                         a(href= object['link']).header-nav__link= object['title']
     .header-bottom
         .container                
