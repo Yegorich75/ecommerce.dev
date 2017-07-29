@@ -1,10 +1,13 @@
-header
-    background-color: #000
+.index-page
+    header
+        absolute($top:0,$left:0,$right:0)
+        z-index: 1
+        background-color: rgba(0,0,0,.4)
 
 .header-top    
     .container
         display: flex
-        align-items: flex-end
+        align-items: center
         justify-content: space-between
         border-bottom: 1px solid grayColor
 
@@ -23,6 +26,8 @@ header
     align-items: flex-end
     justify-content: space-between
     flex-shrink: 1
+    &__list
+        padding: 0 20px
     &__item
         margin-bottom: 10px
         &:last-child
@@ -49,7 +54,7 @@ header
             &:first-child
                 margin-left: 45px
         .icon
-            fill: #fff
+            fill: redColor
             size(30px)
             margin-bottom: 15px
             margin: center
